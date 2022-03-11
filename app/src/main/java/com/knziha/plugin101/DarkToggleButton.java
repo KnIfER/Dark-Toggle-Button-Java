@@ -13,7 +13,7 @@ import android.view.animation.Interpolator;
 
 import androidx.annotation.Nullable;
 
-public class DarkToggleButton extends View {
+public class DarkToggleButton extends View implements DarkToggleInterface {
 	/** 画布旋转角度 */
 	private final static int rotation=0;
 	/** 月蚀面X轴偏移比例 */

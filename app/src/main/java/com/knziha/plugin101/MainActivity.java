@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 			@Override
 			public void onClick(View v) {
 				btn.toggle();
+				TesseractPluginTest.Test(MainActivity.this);
 			}
 		});
 	}

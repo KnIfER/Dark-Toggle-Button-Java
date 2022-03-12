@@ -18,8 +18,10 @@ Inspired by:
 
 # Plugin101 Test
 
-### [TesseractPluginTest](app/src/main/java/com/knziha/plugin101/TesseractPluginTest.java)
+### [Plugin Invokder](https://github.com/KnIfER/AndroidPlugin101)
+
+### [Tesseract Plugin Test](app/src/main/java/com/knziha/plugin101/TesseractPluginTest.java)
 
 but Tesseract4Android needs external model files which requires Read/Write Access to the sdcard storage, so —— 
 
-### [PrivatePathTest](app/src/main/java/com/knziha/plugin101/PrivatePathTest.java)
+### [Private Path Test](app/src/main/java/com/knziha/plugin101/PrivatePathTest.java)

@@ -1,6 +1,5 @@
 package com.knziha.plugin101;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
@@ -44,21 +43,22 @@ public class TesseractPluginTest {
 	}
 	
 	public static void Test(Context context) {
+		CMN.rt();
 		TessBaseAPI tess = new TessBaseAPI();
-
+		
 		String dataPath = new File(Environment.getExternalStorageDirectory(), "tesseract").getAbsolutePath();
-
+		
 		tess.init(dataPath, "eng");
 		
 		tess.setImage(getBitmapFromAsset(context, R.raw.text));
 		String text = tess.getUTF8Text();
+		CMN.pt("test_done", text);
 		
 		try {
 			Toast.makeText(context, text, 1).show();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		android.util.Log.d("fatal test", text);
 		
 		tess.recycle();
 	}
